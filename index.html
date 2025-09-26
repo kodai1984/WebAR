@@ -13,8 +13,6 @@
       vr-mode-ui="enabled: false"
       embedded
       arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
-      
-      <!-- NFTマーカー認識 -->
       <a-nft
         type="nft"
         url="./marker-image"
@@ -22,18 +20,15 @@
         smoothCount="10"
         smoothTolerance="0.01"
         smoothThreshold="5">
-        
-        <!-- 動画表示（浮かせて表示する例） -->
         <a-video
           src="https://www.w3schools.com/html/mov_bbb.mp4"
-          width="1"          <!-- 横幅1m -->
-          height="0.6"       <!-- 縦幅0.6m -->
-          position="0 0.3 0" <!-- ポスターから30cm上に浮かせる -->
-          rotation="-90 0 0" <!-- ポスターと平行に表示 -->
+          width="1"
+          height="0.6"
+          position="0 0.3 0"
+          rotation="-90 0 0"
           autoplay="true"
           loop="false">
         </a-video>
-        
       </a-nft>
     </a-scene>
   </body>
