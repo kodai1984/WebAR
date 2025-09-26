@@ -9,7 +9,6 @@
     </style>
   </head>
   <body>
-    <video id="myvideo" src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay loop muted playsinline style="display:none"></video>
     <a-scene
       vr-mode-ui="enabled: false"
       embedded
@@ -21,13 +20,15 @@
         smoothCount="10"
         smoothTolerance="0.01"
         smoothThreshold="5">
-        <a-plane
-          src="#myvideo"
+        <a-video
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
           width="1"
           height="0.6"
           position="0 0.3 0"
           rotation="-90 0 0"
-        ></a-plane>
+          autoplay="true"
+          loop="false">
+        </a-video>
       </a-nft>
     </a-scene>
   </body>
